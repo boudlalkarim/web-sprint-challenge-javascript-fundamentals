@@ -26,14 +26,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+the forEach method doesnt return anything it just calls each element on an array while the .map uses the return value and returns a new array 
 2. Explain the difference between a callback and a higher order function.
-
+a callback function is a function that is passed to another function and call it at the end while the higher order function  is a fiunction that takes another function as an argument.
 3. What is closure?
 
+ a closure gives you access to an outer function's scope from an inner function
 4. Describe the four rules of the 'this' keyword.
 
-5. Why do we need super() in an extended class?
+
+it is used to call the constructor of the parent class and also to access the parent's properties amd methods
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
