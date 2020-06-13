@@ -47,9 +47,12 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count.
  Using filter, create a new array of objects called lowPopulationAnimals
   which contains only the animals with a population less than 5.
+  
 
 */
-const lowPopulationAnimals
+const lowPopulationAnimals = zooAnimals.filter {
+  
+}
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -76,6 +79,10 @@ console.log(populationTotal);
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
+function consume(a, b, cb) {
+   
+
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -83,6 +90,10 @@ console.log(populationTotal);
   * Create a function named greeting that accepts a first and last name and returns 
   * "Hello first-name last-name, nice to meet you!"
 */
+
+function add() {
+
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
