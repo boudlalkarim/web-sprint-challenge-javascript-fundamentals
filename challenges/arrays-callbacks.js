@@ -24,6 +24,10 @@ displayNames will be an array of strings, and each string should
 
 */
 const displayNames = [];
+zooAnimals.forEach((a) => 
+  displayNames.push(`Name: ${a.animal_name}, Scientific: ${a.scientific_name} `)
+
+);
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -39,9 +43,8 @@ names (animal_name only) converted to lower
 
 */
 
-const lowCaseAnimalNames
+const lowCaseAnimalNames = zooAnimals.map((a) => a.animal_name.toLowerCase());
 console.log(lowCaseAnimalNames);
-
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count.
@@ -50,9 +53,7 @@ The zoos are concerned about animals with a lower population count.
   
 
 */
-const lowPopulationAnimals = zooAnimals.filter {
-  
-}
+const lowPopulationAnimals = zooAnimals.filter((a) => a.population < 5);
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -66,9 +67,8 @@ the zoos using the .reduce() method.
  , and an initial value for the count.
 
 */
-let populationTotal = 0;
+const populationTotal = zooAnimals.reduce((a, c) => a + c.population, 0);
 console.log(populationTotal);
-
 
 // ==== Callbacks ====  
 
@@ -80,7 +80,7 @@ console.log(populationTotal);
 */
 
 function consume(a, b, cb) {
-   
+   return cb(a, b) 
 
 }
 
@@ -105,10 +105,10 @@ function multiply(a, b) {
 
 
 function greeting(karim, boudlal) {
-  this.karim = karim;
-  this.boudlal = boudlal;
 
-  return ("hello"${this.karim } " " ${this.boudlal} "nice to meet you")
+  
+
+  return `hello ${karim} ${boudlal}, nice to meet you!`
 }
 
 
